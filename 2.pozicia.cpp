@@ -7,7 +7,8 @@ using std::cin;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int i=1,num = 0, max = 0, ind = 0, cnt = 1,n1=0,n2=0,b=0;	cout << "Введите число: ";
+	int i=1,num = 0, max = 0, ind = 0, cnt = 1,n1=0,n2=0,b=0;//о Боже, сколько переменных Вам понадобилось....
+	cout << "Введите число: ";
 	cin >> num;
 	max=num%10;
 	n2=num;
