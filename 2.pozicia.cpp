@@ -1,4 +1,4 @@
-#include <iostream>//Программа нахождения максимальной цифры числа и ее позиции//
+#include <iostream>//3)Программа нахождения максимальной цифры числа и ее позиции//
 #include <clocale>
 #include <cmath>
 #include <iomanip>
