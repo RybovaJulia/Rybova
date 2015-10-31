@@ -18,7 +18,7 @@ int main()
             b=rand()%6+1;
             c=rand()%6+1;
             cout<<"Ваш бросок"<<endl;
-                switch (b) { 
+                switch (b) { //такой код потом видел еще у 2-х человек ((((
 					case 1: cout << "-----" << endl << "--o--" << endl << "-----" << endl; break;
 			        case 2: cout << "-----" << endl << "-o-o-" << endl << "-----" << endl; break;
 			        case 3: cout << "o----" << endl << "--o--" << endl << "----o" << endl; break;
