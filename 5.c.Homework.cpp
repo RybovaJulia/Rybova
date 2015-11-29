@@ -10,23 +10,27 @@
 #include <iomanip>
 using namespace std;
 
-int init_mas mas[], int N)//инициализация чисел
+//инициализация массива
+int init_mas(int mas[], int N)
 {
 	for (int i = 0; i<N; i++)
 	{
 		mas[i] = rand() % 40 - 20;
 	}
+	return 0;
 }
 
+//вывод элементов массива
 int vyvod(int mas[], int N)
 {
 	for (int i = 0; i < N; i++)
 	{
-		cout <<setw(3)<<mas[i]<<;
+		cout <<mas[i]<<' ';
 	}
 	cout << endl << endl;
+		return 0;
 }
-
+//удаление первого элемента массива
 int udalen(int mas[], int &N)
 {
 	for (int i = 0; i < N; i++)
@@ -34,8 +38,9 @@ int udalen(int mas[], int &N)
 		mas[i] = mas[i + 1];
 	}
 	N = N - 1;
+	return 0;
 }
-
+//добавление введённого пользователем числа в конец массива
 int dobavl(int mas[], int &N)
 {
 	int num=0;
@@ -47,6 +52,7 @@ int dobavl(int mas[], int &N)
 	{
 		mas[N-1] = num;
 	}
+		return 0;
 }
 
 int main()
@@ -54,13 +60,13 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	int const  n=100;
 	int N, mas[n];
-	cout << "Введите количество эллементом массива  " << endl;
+	cout << "Введите количество элементов массива  " << endl;
 	cin >> N;
 	cout << endl;
 	if (N <= 100)
 	{
-		init_mas(mas, N);//инитиализация 
-		vyvod(mas, N);
+		init_mas(mas, N);//инитиализация массива
+		vyvod(mas, N);//вывод элементов массива
 
 		udalen(mas, N);//удаление первого элемента массива
 		cout << "Удаление первого элемента массива" << endl << endl;
