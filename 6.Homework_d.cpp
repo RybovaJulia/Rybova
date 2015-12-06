@@ -22,10 +22,9 @@ for (int i = 0; i < N; i++)
 cout<<endl;
 return 0;
 }
-int replace_elem(char A[], int const N)
-{ int kl=0;
-	for (int i = N-1; i >= 0; i--)
-	{kl++;
+int repl_letter(char A[], int const N)
+{ 	for (int i = N-1; i >= 0; i--)
+	{
 	  if (A[i] == 'Z')
 		{
 			A[i] = 'F';
@@ -33,7 +32,7 @@ int replace_elem(char A[], int const N)
 		}
 	}
 	cout<<"-----------------------"<<endl;
-	if (kl==N)
+	if (i==N)
 		cout<<"В массиве нет буквы Z"<<endl;
 		else
 		{
@@ -50,6 +49,6 @@ int main(){
 	init_mas(A, N);
 	cout<<"Введенный массив символов"<<endl;
 	vyvod_mas(A, N);
-	replace_elem(A, N);
+	repl_letter(A, N);
 }
 
