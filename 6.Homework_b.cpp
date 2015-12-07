@@ -3,7 +3,6 @@
 #include <clocale>
 #include <iomanip>
 using namespace std;
-// Удаляем N-й элемент из массива и сдвигаем остальные элементы
 int init_mas(int A[], int const N){
 	cout << "Введите элементы массива: "<<endl;
 	for (int i = 0; i < N; i++){
