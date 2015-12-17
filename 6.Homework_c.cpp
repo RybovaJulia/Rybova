@@ -22,7 +22,7 @@ return 1;
 }
 
 
-int max_kol_char(char A[], int const N,int nMaxChar)
+int max_kol_char(char A[], int const N,int nMaxChar)// зачем эта функция возвращает int? Как это используется???
 {
  int i,j,imax  = 0,nCount= 0;
    for(i = 0; i < N; i++)
