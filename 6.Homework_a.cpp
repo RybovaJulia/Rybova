@@ -10,15 +10,15 @@ int tmp = 0;
 bool push(int A[], int &k, int num)
 {
 	A[k++] = num;
-	if (k >= maxsize)
+	if (k >= maxsize) // а не поздно уже проверяь то теперь? Уже ведь засунули в массив )))) и получили переполнение (((
 		return 0;
 	else 
 		return 1;
 }
 
-int pop(int A[], int &k)
+int pop(int A[], int &k) 
 {
-	if (k == 0) return 0;
+	if (k == 0) return 0; //а если у нас в массиве хранится ноль, то как мы поймем, что вернулось: то-ли 0 - признак  ошибка, то-ли 0 - это просто число????
 	else {
 		tmp = A[k-1];
 		A[k--] = 0;
