@@ -3,7 +3,7 @@
 #include <clocale>
 #include <cmath>
 #include <iomanip>
-using namespace std;
+using namespace std; 
 int init_mas(char A[], int const N)
 {	cout << "Введите 20 букв латинского алфавита через пробел: "<<endl;
 	for (int i = 0; i <N; i++)
