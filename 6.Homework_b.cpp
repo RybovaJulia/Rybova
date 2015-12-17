@@ -24,10 +24,10 @@ int delete_nm(int A[], int const N){
 	int nm = 0;
 	cout << "Введите номер элемента, который нужно удалить (0-9): ";
 	cin >> nm;
-	for (int i = nm; i < N-1; i++){
+	for (int i = nm; i < N-1; i++){//проще цикл осуществить от N-1 до nm...
 		A[i] = A[i + 1];
 	}
-    A[N - 1] = 0;
+    A[N - 1] = 0;//зачем ноль???
 	cout<<endl;
 	return 1;
 }
