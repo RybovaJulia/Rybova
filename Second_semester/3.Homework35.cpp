@@ -11,27 +11,31 @@ const int n=900;
 char* vvod_string (char * str)
 {
 	int d=0; 
-	cout<<"Выберите способ ввода строки:"<<endl<<"  1. Автоматически "<<endl<<"  2. Ввод с клавиатуры "<<endl<<"  3. Из текстового файла"<<endl;  
+	cout<<"Выберите способ ввода строки:"<<endl<<"  1. Автоматически "<<endl<<"  2. Ввод с клавиатуры "<<endl<<"  3. Из текстового файла "<<endl; 
 	cin>>d; 
 	switch(d){ 
-	case 1: strcpy(str,"Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do:  once or twice she had peeped into the book her sister was reading");
+	case 1: strcpy(str,"Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do");
 		cout<<str<<endl; 
 		break; 
-	 case 2:
-		cout << "Введите строку" << "\n";
+	case 2:
+		cout << "Введите строку" <<endl;
 		cin.get();
 		cin.getline(str, n);
 		break;
 	case 3:
 	default: 
-		ifstream infile("D:\\Alice.txt"); 
-		while (!infile.eof()){ 
-			infile.getline(str, n); 
-		}
-		break;
+		ifstream infile ("d:\\input.txt"); 
+		if(!infile.is_open())
+			cout<<"File is not open "<<endl;
+		else
+			while (!infile.eof()){ 
+				infile.getline(str, n); 
+			}
+			break;
 	}
 	return str; 
 } 
+
 void max_lengh(char *str,int n)
 {  
 	char *source = str; 
