@@ -17,19 +17,21 @@ char* vvod_string (char * str)
 	case 1: strcpy(str,"Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do:  once or twice she had peeped into the book her sister was reading");
 		cout<<str<<endl; 
 		break; 
-	 case 2 :
+	 case 2:
 		cout << "Введите строку" << "\n";
 		cin.get();
 		cin.getline(str, n);
-	 default: ifstream infile ("D:\\Alice.txt"); 
- 	     while (!infile.eof()){ 
-		infile.getline(str, n); 
- 	} 
 		break;
-	} 
+	case 3:
+	default: 
+		ifstream infile("D:\\Alice.txt"); 
+		while (!infile.eof()){ 
+			infile.getline(str, n); 
+		}
+		break;
+	}
 	return str; 
 } 
-
 void max_lengh(char *str,int n)
 {  
 	char *source = str; 
