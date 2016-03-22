@@ -24,7 +24,7 @@ char* vvod_string (char * str)
 		break;
 	case 3:
 	default: 
-		ifstream infile ("d:\\input.txt"); 
+		ifstream infile("d:\\input.txt"); 
 		if(!infile.is_open())
 			cout<<"File is not open "<<endl;
 		else
@@ -88,7 +88,6 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 	char *str = new char[n];
-	int i=0;
 	vvod_string(str); 
 	max_lengh(str,n);
 	cout << "Строка после удаления=" <<endl<<str<<endl;
