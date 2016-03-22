@@ -21,7 +21,6 @@ char* vvod_string (char * str)
 		cout << "Введите строку" << "\n";
 		cin.get();
 		cin.getline(str, n);
-		break;
 	 default: ifstream infile ("D:\\Alice.txt"); 
  	     while (!infile.eof()){ 
 		infile.getline(str, n); 
